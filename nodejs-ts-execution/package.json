@@ -1,0 +1,14 @@
+{
+  "name": "agnetcore-tools-ts-execution",
+  "version": "1.0.0",
+  "description": "TypeScript code execution environment for AgentCore Tools",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "dependencies": {},
+  "scripts": {},
+  "author": "AgentCore Tools Team",
+  "license": "UNLICENSED"
+}

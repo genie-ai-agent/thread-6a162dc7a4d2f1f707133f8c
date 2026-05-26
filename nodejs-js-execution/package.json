@@ -1,0 +1,14 @@
+{
+  "name": "agnetcore-tools-js-execution",
+  "version": "1.0.0",
+  "description": "JavaScript code execution environment for AgentCore Tools",
+  "private": true,
+  "type": "commonjs",
+  "engines": {
+    "node": ">=24.14.0"
+  },
+  "dependencies": {},
+  "scripts": {},
+  "author": "AgentCore Tools Team",
+  "license": "UNLICENSED"
+}

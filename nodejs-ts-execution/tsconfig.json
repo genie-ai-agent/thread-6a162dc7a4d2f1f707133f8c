@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // Decorator support
+    "experimentalDecorators": false,
+    
+    // Class field semantics
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    
+    // Strict mode
+    "strict": true,
+    "alwaysStrict": true,
+    
+    // Import handling
+    "verbatimModuleSyntax": true,
+    
+    // Path resolution (for import aliases)
+    "baseUrl": ".",
+    "paths": {}
+  }
+}

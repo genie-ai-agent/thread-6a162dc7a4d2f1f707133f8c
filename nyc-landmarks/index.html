@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC Landmarks — A Visual Guide</title>
+  <meta name="description" content="A curated guide to the most iconic landmarks across all five boroughs of New York City." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">A guide to the five boroughs</p>
+      <h1>New York City Landmarks</h1>
+      <p class="lede">From cast-iron skyscrapers to oyster-shell shores, a tour of the places that make NYC, NYC.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls" aria-label="Filter landmarks">
+      <input type="search" id="search" placeholder="Search by name or neighborhood…" aria-label="Search landmarks" />
+      <div class="filters" id="borough-filters" role="tablist" aria-label="Filter by borough"></div>
+    </section>
+
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+
+    <section id="grid" class="grid" aria-label="Landmarks list"></section>
+
+    <p id="empty" class="empty" hidden>No landmarks match your search.</p>
+  </main>
+
+  <footer>
+    <p>Built for the curious wanderer. Data is editorial, not exhaustive.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
