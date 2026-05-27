@@ -3,34 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NYC Landmarks — A Visual Guide</title>
-  <meta name="description" content="A curated guide to the most iconic landmarks across all five boroughs of New York City." />
+  <title>NYC Landmarks</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">A guide to the five boroughs</p>
-      <h1>New York City Landmarks</h1>
-      <p class="lede">From cast-iron skyscrapers to oyster-shell shores, a tour of the places that make NYC, NYC.</p>
-    </div>
+    <h1>NYC Landmarks</h1>
+    <p class="subtitle">Iconic sights across all five boroughs</p>
   </header>
 
-  <main class="container">
-    <section class="controls" aria-label="Filter landmarks">
-      <input type="search" id="search" placeholder="Search by name or neighborhood…" aria-label="Search landmarks" />
-      <div class="filters" id="borough-filters" role="tablist" aria-label="Filter by borough"></div>
-    </section>
+  <section class="controls">
+    <input id="search" type="search" placeholder="Search landmarks..." autocomplete="off" />
+    <div id="borough-filters" class="filters"></div>
+  </section>
 
-    <p id="result-count" class="result-count" aria-live="polite"></p>
-
-    <section id="grid" class="grid" aria-label="Landmarks list"></section>
-
-    <p id="empty" class="empty" hidden>No landmarks match your search.</p>
+  <main>
+    <div id="count" class="count"></div>
+    <ul id="grid" class="grid"></ul>
+    <p id="empty" class="empty" hidden>No landmarks match.</p>
   </main>
 
   <footer>
-    <p>Built for the curious wanderer. Data is editorial, not exhaustive.</p>
+    <p>45 landmarks &middot; all five boroughs</p>
   </footer>
 
   <script src="data.js"></script>
